@@ -1,0 +1,12 @@
+It is the maximum sum which a subarray can give from a given array.
+
+In case of only positive umber subarray: It is the sum of all the numbers in an array.
+
+int a[5] = {1,2,3,4,5};
+its sum would be 15 which is its maximum sum.
+
+But in case if an array includes both positive and negative number then we have 3 approch:
+
+1. Brute Force Approach
+2. Slightly Optimized Approach
+3. Kandane's Algorithm
