@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter a decimal number: ";
+    cin >> n;
+
+    stack<int> s;
+
+    if (n == 0) {
+        cout << "Binary: 0";
+        return 0;
+    }
+
+    while (n > 0) {
+        s.push(n % 2);
+        n /= 2;
+    }
+
+    cout << "Binary: ";
+    while (!s.empty()) {
+        cout << s.top();
+        s.pop();
+    }
+
+    return 0;
+}
